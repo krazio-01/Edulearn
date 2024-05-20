@@ -1,0 +1,53 @@
+# Node.js
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# Logs
+logs/
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+client/node_modules/
+server/node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*.swp
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build directories
+client/build/
+client/dist/
+server/build/
+server/dist/
+
+# Cloudinary uploads
+uploads/

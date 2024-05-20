@@ -1,0 +1,109 @@
+extends base.pug 
+
+block scripts 
+    script(src='/servingFiles/index.js')
+
+block style 
+    style 
+        include ../servingFiles/style.css
+
+block content
+    section#introSection 
+        div.wrapper
+            div.main Success is the sum of small efforts, repeated day in and day out.
+            div.small Advance in your career by taking our high-quality online courses and obtaining industry-recognized certification.
+            div.explore-btn
+                button(class="explore-courses") Explore courses
+
+        img(src="https://i.ibb.co/F5Yb2k1/intro-image-removebg-preview.png")
+
+    section.categories
+        h1 Categories
+        p Popular Categories
+
+        div.cat-box
+            img(src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png")
+            p React Js
+
+        div.cat-box
+            img(src="https://cdn-icons-png.flaticon.com/512/919/919854.png")
+            p Java 
+
+        div.cat-box
+            img(src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png") 
+            p C++
+
+        div.cat-box
+            img(src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png")
+            p Python
+
+    section.popular-courses
+        h1 Top rated learning tutorials
+
+        div.container
+            div.course
+                div.image
+                    img(src="https://res.cloudinary.com/highereducation/images/w_1024,h_683,c_scale/f_auto,q_auto/v1663943370/BestColleges.com/young-woman-studying-at-home_482201cbaa/young-woman-studying-at-home-1024x683.jpg")
+                div.data
+                    div.top
+                        p Free
+                    div.title
+                        p ABsolute beginners c++ course
+                    div.rating
+                        img(Src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg")
+
+            div.course
+                div.image
+                    img(src="https://www.uopeople.edu/wp-content/uploads/2019/12/How-to-Make-Studying-Fun-to-Keep-You-Motivated.webp")
+                div.data
+                    div.top
+                        p Free
+                    div.title
+                        p Basic to advance Java course
+                    div.rating
+                        img(Src="https://www.citypng.com/public/uploads/preview/rating-review-yellow-5-stars-png-image-11670328685efoicfrjz3.png")
+
+            div.course
+                div.image
+                    img(src="https://media.istockphoto.com/id/1214361283/photo/teenage-boy-attending-to-online-school-class.jpg?s=612x612&w=0&k=20&c=1Trs3CU6WXJDJxqWwigcqlhQ6M7motuKqxBH3kKAmLA=")
+                div.data
+                    div.top
+                        p Free
+                    div.title
+                        p Full Stack Web Development
+                    div.rating
+                        img(Src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg")
+
+            div.course
+                div.image
+                    img(src="https://images.theconversation.com/files/296814/original/file-20191014-135509-xpdud2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip")
+                div.data
+                    div.top
+                        p Free
+                    div.title
+                        p Complete Python course
+                    div.rating
+                        img(Src="https://www.citypng.com/public/uploads/preview/rating-review-yellow-5-stars-png-image-11670328685efoicfrjz3.png")
+
+            div.course
+                div.image
+                    img(src="https://theparentswebsite.com.au/wp-content/uploads/2019/10/Boy-studying-with-headphones-feature-1200x800.jpg")
+                div.data
+                    div.top
+                        p Free
+                    div.title
+                        p Ethical hacking from basic to advance
+                    div.rating
+                        img(Src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg")
+
+            div.course
+                div.image
+                    img(src="https://res.cloudinary.com/jerrick/image/upload/v1599151635/5f511e13579c3c001c3769a4.jpg")
+                div.data
+                    div.top
+                        p Free
+                    div.title
+                        p Complete Python course
+                    div.rating
+                        img(Src="https://www.citypng.com/public/uploads/preview/rating-review-yellow-5-stars-png-image-11670328685efoicfrjz3.png")
+

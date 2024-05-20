@@ -1,0 +1,62 @@
+doctype html
+
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title My Site - #{title}
+        block scripts
+        block style 
+    body
+        header.header
+            a(href="/" class="logo")
+                img(src="https://cdn-icons-png.flaticon.com/512/747/747086.png", alt="Logo")
+                span(class="text") Edulearn
+
+            nav#navbar
+                ul
+                    li #[a(href="/") Home]
+                    li #[a(href="/") About]
+                    li #[a(href="/") Services]
+                    li #[a(href="/contact") Contact Us]
+
+            div.icons
+                    button(type="button" onclick="window.location.href='/login'" class="log")
+                        span(class="button_icon")
+                            img(src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png")
+
+                        span(class="button_text")
+                            | Login 
+                
+
+        block content
+        footer.footer
+            div.footer-main
+                div.logo
+                    img(src="https://cdn-icons-png.flaticon.com/512/747/747086.png", alt="Logo")
+                    p Our online courses are of high quality and will help you advance in your career with industry-recognized certification.
+                    
+                div.company
+                    h1 Company
+                    ul
+                        li #[a(href="/") About]
+                        li #[a(href="/") Sustainability]
+                        li #[a(href="/") Terms of Services]
+                        li #[a(href="/") Privacy Policy]
+
+                div.resources
+                    h1 Resources
+                    ul
+                        li #[a(href="/") Payment]
+                        li #[a(href="/") Blog]
+                        li #[a(href="/") Support]
+                        li #[a(href="/") Feedback]
+
+                div.quick
+                    h1 Quick links
+                    ul
+                        li #[a(href="/") Home]
+                        li #[a(href="/") FAQ]
+                        li #[a(href="/") Contact]
+        
+        div.copyright
+            h1 2023 © Copyright Edulearn and designed by Amman

@@ -1,0 +1,42 @@
+extends base.pug 
+
+block style
+    style
+        include ../servingFiles/style.css
+        include ../servingFiles/login.css
+
+block content
+    div.container
+        form(action= "/login", method= "post", class= "myForm")
+            h1 Login 
+            div.myInput
+                input(type="email", name="email", value="", onchange="this.setAttribute('value', this.value)")
+                label Email
+
+            div.myInput 
+                input(type="password", name="password", value="", onchange="this.setAttribute('value', this.value)")
+                label Password
+
+            button(id="my-btn", class="btn", type="submit")
+                | Sign in
+
+            if msg
+                div.popup.show#popup
+                    div.popup-content
+                        p=msg
+                        span.close-button x
+                        div.wrapper
+                            div.tick
+            
+            div.register
+                p don't have an account ?
+                li #[a(href="/register") Register]
+
+    script.
+        const closeBtn = document.querySelector('.close-button');
+        const popup = document.querySelector('.popup');
+
+        closeBtn.addEventListener('click', () => {
+            popup.classList.remove('show');
+            window.location.href = "/";
+        });
